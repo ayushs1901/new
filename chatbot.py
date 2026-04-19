@@ -5,8 +5,11 @@ def chatbot():
     while True:
         user_input = input("You: ").strip()
         
-        if user_input.lower() in ['quit', 'exit', 'bye']:
+        if user_input.lower() in ['quit', 'exit']:
             print("Chatbot: Goodbye!")
+            break
+        elif user_input.lower() == 'bye':
+            print("Chatbot: Bye!")
             break
         elif user_input:
             print("Chatbot: Hi")
